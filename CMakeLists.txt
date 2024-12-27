@@ -61,6 +61,11 @@ add_definitions(
 # Tutorial 1
 add_executable(triangle 
 	src/triangle.cpp
+	common/shader.cpp
+	common/shader.hpp
+	
+	src/SimpleFragmentShader.fragmentshader
+	src/SimpleVertexShader.vertexshader
 )
 target_link_libraries(triangle
 	${ALL_LIBS}
